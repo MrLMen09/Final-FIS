@@ -1,0 +1,66 @@
+#contenedorTarjeta
+{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 30px;
+    width: 200px;
+    height: 400px;
+    background: #282c34;
+    border: 1px solid white;
+    color: greenyellow;
+    box-shadow: 10px 10px 20px black;
+}
+#adelante
+{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.botonesTarjetas
+{
+    width: 20px;
+    height: 50px;
+    color: white;
+}
+#agregar
+{
+    background: lightskyblue;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    border-radius: 5px;
+    border: none;
+}
+#comprar
+{
+    background: lightgreen;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    border-radius: 5px;
+    border: none;
+}
+
+#imagen
+{
+    height: 33%;
+}
+#imagen-tarjeta
+{
+    width: 100%;
+    height: 100%;
+}
+#info
+{
+    height: 47%;
+    overflow: hidden;   
+}
+#botones
+{
+    height: 20%;
+}
+#atras
+{
+
+}
