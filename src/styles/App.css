@@ -3,13 +3,13 @@
   height: 750px;
   text-align: center;
   display: grid;
-  grid-template-areas: 
-  "header header header"
-  "nav main main" 
-  "nav main main"
-  "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "nav main main"
+    "footer footer footer";
   grid-template-columns: 20% 40% 40%;
-  grid-auto-rows: 15% 70% 15%;  
+  grid-auto-rows: 15% 70% 15%;
 }
 
 .App-logo {
@@ -17,33 +17,29 @@
   pointer-events: none;
 }
 
-#textura
-{
+#textura {
   width: 100%;
   height: 100%;
   opacity: 5%;
 }
 
-#logo
-{
+#logo {
   width: 70px;
   height: 70px;
   margin: 0 10px;
 }
-#h-principal
-{
+
+#h-principal {
   display: flex;
   justify-content: left;
 }
 
-#botones-header
-{
+#botones-header {
   display: flex;
   justify-content: space-between;
 }
 
-header
-{
+header {
   background-color: #282c34;
   color: white;
   grid-area: header;
@@ -58,20 +54,18 @@ header
   overflow: hidden;
 }
 
-#usuario
-{
+#usuario {
   width: 50px;
   height: 50px;
 }
-#carrito
-{
+
+#carrito {
   width: 50px;
   height: 50px;
 }
 
 
-nav
-{
+nav {
   grid-area: nav;
   width: 100%;
   height: 100%;
@@ -81,30 +75,28 @@ nav
   text-align: center;
 }
 
-.menu
-{
+.menu {
   width: 100%;
   height: 50px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
-.menu:hover
-{
+
+.menu:hover {
   background: greenyellow;
   color: #282c34;
   width: 100%;
   height: 50px;
 }
 
-main
-{
+main {
   grid-area: main;
   width: 100%;
   height: 100%;
   background: darkolivegreen;
 }
-footer
-{
+
+footer {
   grid-area: footer;
   width: 100%;
   height: 100%;
@@ -125,6 +117,7 @@ footer
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
