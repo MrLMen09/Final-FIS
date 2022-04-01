@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
+
 function Header() {
     return (
         <header className="App-header">
@@ -9,6 +11,8 @@ function Header() {
                 <h1 id="titulo">Cine Jungla</h1>
             </div>
             <div id="botones-header">
+                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/reportes">Reportes</NavLink>
                 <img src="../media/carritoBlanco.png" alt="" id="carrito" />
                 <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />
                 {/*<nav class="navbar navbar-expand-lg navbar-light">

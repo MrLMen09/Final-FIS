@@ -1,5 +1,4 @@
 import '../styles/Reportes.css';
-import Tarjeta from '../componentes/Tarjeta';
 import CHeader from '../componentes/Header.jsx';
 
 function Reportes() {
@@ -10,9 +9,9 @@ function Reportes() {
                 <div className="divReporte">
                     <h1 className="titleReporte">Reporte de operaciones mensuales</h1>
                     <p><b>Id reporte: </b>1</p>
-                    <p><b>Periodo de reporte: </b>01/03/2022 a 31/03/2022</p>
+                    <p><b>Periodo inicio de reporte: </b>01/03/2022</p>
+                    <p><b>Periodo fin de reporte: </b>31/03/2022</p>
                     <p><b>Multiplex: </b>Unicentro</p>
-
                     <p><b>Datos estadisticos: </b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
                     of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 

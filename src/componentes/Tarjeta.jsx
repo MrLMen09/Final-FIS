@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Tarjeta.css';
-import Image from 'react-bootstrap/Image';
 
 function Tarjeta() {
 
