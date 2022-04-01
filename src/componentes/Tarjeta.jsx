@@ -24,19 +24,17 @@ function Tarjeta() {
                     <button id="agregar" className='botonesTarjeta'>Agregar al Carrito</button>
                     <button id="comprar" className='botonesTarjeta'>Comprar Ahora</button>
                     <div className="row">
-                    <div className="col-lg-4 info1">
-                        <button type="button" className="btn btn-dark quantity">-</button>
-                    </div>
-                    <div className="col-lg-4 info2">
-                        <input type="text" className='i_quantity' min="0" defaultValue="0" disabled />
-                    </div>
-                    <div className="col-lg-4 info3">
-                        <button type="button" className="btn btn-dark quantity" >+</button>
+                        <div className="col-lg-4 info1">
+                            <button type="button" className="btn btn-dark quantity">-</button>
+                        </div>
+                        <div className="col-lg-4 info2">
+                            <input type="text" className='i_quantity' min="0" defaultValue="0" disabled />
+                        </div>
+                        <div className="col-lg-4 info3">
+                            <button type="button" className="btn btn-dark quantity" >+</button>
+                        </div>
                     </div>
                 </div>
-                </div>
-                
-
             </div>
         </div>
     );
