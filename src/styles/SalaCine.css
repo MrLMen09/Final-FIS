@@ -1,0 +1,32 @@
+.App-main{
+    background-color: white;
+}
+
+.salaCine{
+    text-align: justify;
+}
+
+.titles{
+    padding-bottom: 1.5em;
+}
+
+.titleSala, .titlePelicula{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.containerImg{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    left: 25%;
+}
+
+.sillas{
+    width: auto;
+}
+
+.compraSillas{
+    text-align: center;
+}

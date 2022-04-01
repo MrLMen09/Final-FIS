@@ -9,7 +9,9 @@ function Header() {
                 <h1 id="titulo">Cine Jungla</h1>
             </div>
             <div id="botones-header">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="../media/carritoBlanco.png" alt="" id="carrito" />
+                <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />
+                {/*<nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Navbar</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,9 +46,7 @@ function Header() {
                             </form>
                         </div>
                     </div>
-                </nav>
-                {/*<img src="../media/carritoBlanco.png" alt="" id="carrito" />
-                    <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />*/}
+                </nav>*/}
             </div>
         </header>
     );

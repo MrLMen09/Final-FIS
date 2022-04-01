@@ -1,86 +1,111 @@
 import '../styles/SalaCine.css';
+import CHeader from '../componentes/Header.jsx';
+import ImgSalaCine from '../media/SalaCine.png';
 
 function SalaCine() {
     return (
         <div className="App">
-            <header className="App-header">
-                <div id="h-principal">
-                    <img
-                        id="logo"
-                        src="../media/logo.png"
-                    />
-                    <h1 id="titulo">Cine Jungla</h1>
-                </div>
-                <div id="botones-header">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><hr class="dropdown-divider" /></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled">Disabled</a>
-                                    </li>
-                                </ul>
-                                <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </nav>
-                    {/*<img src="../media/carritoBlanco.png" alt="" id="carrito" />
-                    <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />*/}
-                </div>
-            </header>
+            <CHeader />
             <main className="App-main">
-                <div className="divReporte">
-                    <h1 className="titleReporte">Reporte de operaciones mensuales</h1>
-                    <p><b>Id reporte: </b>1</p>
-                    <p><b>Periodo de reporte: </b>01/03/2022 a 31/03/2022</p>
-                    <p><b>Multiplex: </b>Unicentro</p>
-
-                    <p><b>Datos estadisticos: </b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 
-                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
-                    versions of Lorem Ipsum.</p>
+                <div className="salaCine">
+                    <div className="titles">
+                        <h1 className="titleSala">Sala: 1</h1>
+                        <h2 className="titlePelicula">Pelicula: Batman</h2>
+                    </div>
+                    <div className="containerImg">
+                        <img src={ImgSalaCine} alt="DistribucionSillas" className="ImgSalaCine" />
+                    </div>
+                    <div className="compraSillas">
+                        <form action="" target="_blank">
+                            <p>Selecciona tus sillas:</p>
+                            <SelectSillas/>
+                            <p><input type="submit" value="Enviar" /></p>
+                        </form>
+                    </div>
                 </div>
             </main>
             <nav className="App-nav">
-                <p className='' id="peliculas">MULTIPLEX's</p>
-                <p className='menu' id="peliculas">Titan</p>
-                <p className='menu' id="peliculas">Unicentro</p>
-                <p className='menu' id="peliculas">Plaza Central</p>
-                <p className='menu' id="peliculas">Gran Estación</p>
-                <p className='menu' id="peliculas">Embajador (Centro)</p>
-                <p className='menu' id="peliculas">Las Américas</p>
+
             </nav>
             <footer className="App-footer">
 
             </footer>
         </div>
     );
+}
+
+function SelectSillas() {
+    return (
+        <select className="sillas" name="sillas[]" size="10" multiple required>
+            <option disabled>Fila A</option>
+            <option value="1A">1</option>
+            <option value="2A">2</option>
+            <option value="3A">3</option>
+            <option value="4A">4</option>
+            <option value="5A">5</option>
+            <option value="6A">6</option>
+            <option value="7A">7</option>
+            <option value="8A">8</option>
+            <option value="9A">9</option>
+            <option value="10A">10</option>
+            <option disabled>Fila B</option>
+            <option value="1B">1</option>
+            <option value="2B">2</option>
+            <option value="3B">3</option>
+            <option value="4B">4</option>
+            <option value="5B">5</option>
+            <option value="6B">6</option>
+            <option value="7B">7</option>
+            <option value="8B">8</option>
+            <option value="9B">9</option>
+            <option value="10B">10</option>
+            <option disabled>Fila C</option>
+            <option value="1C">1</option>
+            <option value="2C">2</option>
+            <option value="3C">3</option>
+            <option value="4C">4</option>
+            <option value="5C">5</option>
+            <option value="6C">6</option>
+            <option value="7C">7</option>
+            <option value="8C">8</option>
+            <option value="9C">9</option>
+            <option value="10C">10</option>
+            <option disabled>Fila D</option>
+            <option value="1D">1</option>
+            <option value="2D">2</option>
+            <option value="3D">3</option>
+            <option value="4D">4</option>
+            <option value="5D">5</option>
+            <option value="6D">6</option>
+            <option value="7D">7</option>
+            <option value="8D">8</option>
+            <option value="9D">9</option>
+            <option value="10D">10</option>
+            <option disabled>--Preferencial--</option>
+            <option disabled>Fila E</option>
+            <option value="1E">1</option>
+            <option value="2E">2</option>
+            <option value="3E">3</option>
+            <option value="4E">4</option>
+            <option value="5E">5</option>
+            <option value="6E">6</option>
+            <option value="7E">7</option>
+            <option value="8E">8</option>
+            <option value="9E">9</option>
+            <option value="10E">10</option>
+            <option disabled>Fila F</option>
+            <option value="1F">1</option>
+            <option value="2F">2</option>
+            <option value="3F">3</option>
+            <option value="4F">4</option>
+            <option value="5F">5</option>
+            <option value="6F">6</option>
+            <option value="7F">7</option>
+            <option value="8F">8</option>
+            <option value="9F">9</option>
+            <option value="10F">10</option>
+        </select>
+    )
 }
 
 export default SalaCine;

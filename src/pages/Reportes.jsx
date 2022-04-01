@@ -1,6 +1,6 @@
 import '../styles/Reportes.css';
-import Tarjeta from '../tarjeta/Tarjeta';
-import CHeader from './Header.jsx';
+import Tarjeta from '../componentes/Tarjeta';
+import CHeader from '../componentes/Header.jsx';
 
 function Reportes() {
     return (
