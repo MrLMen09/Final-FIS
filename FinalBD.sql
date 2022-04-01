@@ -115,10 +115,11 @@ CREATE TABLE `Pelicula`
 (
 	`nombre` VARCHAR(50) NOT NULL,
 	`duracion` TIME NOT NULL,
+    `idPelicula` VARCHAR(50) NOT NULL,
 	`valoraciones` DOUBLE(5,2) NOT NULL,
 	`descripcion` VARCHAR(50) NOT NULL,
 	`codigoFuncion` VARCHAR(30) NULL,
-	CONSTRAINT `PK_Pelicula` PRIMARY KEY (`nombre` ASC)
+	CONSTRAINT `PK_Pelicula` PRIMARY KEY (`idPelicula` ASC)
 )
 
 ;
@@ -273,5 +274,5 @@ SET FOREIGN_KEY_CHECKS=1
 ; 
 INSERT INTO `bd_finalfis` . `multiplex` (`nombre`, `direccion` , `horario`) VALUES ('Jg1' , 'Kr 6 N 8B', '3:00:00');
 INSERT INTO `bd_finalfis` . `sala` (`estado` , `codigoSala` , `nombre`) VALUES ('Activa' , '1S' , 'Jg1');
-INSERT INTO `bd_finalfis` . `funcion` (`codigoFuncion` , `horaInicial` , `horaFinal`, `Fecha`, `codigoSala`) VALUES ('1','1:00:00', '3:00:00', '202funcionfuncionfuncioncodigoFuncionhoraInicialhoraFinalcodigoFuncion2-06-15', '1S');
-INSERT INTO `bd_finalfis`.`pelicula` (`nombre`, `duracion`, `valoraciones`, `descripcion`, `codigoFuncion`) VALUES ('Batman', '2:56:00', '4.0', 'Batman 2022', '1');
+INSERT INTO `bd_finalfis` . `funcion` (`codigoFuncion` , `horaInicial` , `horaFinal`, `Fecha`, `codigoSala`) VALUES ('1','1:00:00', '3:00:00', '20-06-15', '1S');
+INSERT INTO `bd_finalfis`.`pelicula` (`nombre`, `duracion`, `idPelicula`, `valoraciones`, `descripcion`, `codigoFuncion`) VALUES ('Batman', '2:56:00','BSC145', '4.0', 'Batman 2022', '1');
