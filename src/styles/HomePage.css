@@ -1,15 +1,5 @@
-.App {
-    width: 1340;
-    height: 750px;
-    text-align: center;
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "nav main main"
-        "nav main main"
-        "footer footer footer";
-    grid-template-columns: 20% 40% 40%;
-    grid-auto-rows: 15% 70% 15%;
+.btn{
+    margin-top: 1em;
 }
 
 
@@ -18,8 +8,7 @@
     pointer-events: none;
 }
 
-#textura {
-    width: 100%;
+.title{
     height: 100%;
     opacity: 5%;
 }

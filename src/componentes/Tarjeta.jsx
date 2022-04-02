@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Tarjeta.css';
 
 function Tarjeta(props) {
 
-    const [tarjetas, setTarjetas] = useState([]);
-
-    useEffect(() => {
-        const getTarjetas = () =>{
-            fetch('http://localhost:9000/api/pelicula')
-            .then(res => res.json())
-            .then(res => setTarjetas(res))
-        }
-        getTarjetas()
-    }, [])
 
     return (
                 <div className="contenedorTarjeta">

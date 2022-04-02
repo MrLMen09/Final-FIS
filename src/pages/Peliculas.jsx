@@ -1,12 +1,12 @@
-import '../styles/HomePage.css';
-import React from 'react';
+import '../styles/Peliculas.css';
+import React, { useState, useEffect } from 'react';
 import Tarjeta from '../componentes/Tarjeta';
-import AppNav from '../componentes/AppNav';
 import CHeader from '../componentes/Header.jsx';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import AppNav from '../componentes/AppNav';
+import { BrowserRouter as Router, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
 
-function HomePage() {
+function Peliculas() {
+
     const initialStateNav = [
         {
             id: "peliculas",
@@ -19,13 +19,19 @@ function HomePage() {
             url: "/snacks"
         }
     ]
+
+    let navigate = useNavigate();
+    function handleClick() {
+        navigate('/agregarpelicula')
+    }
+
     const [tarjetas, setTarjetas] = useState([]);
 
     useEffect(() => {
-        const getTarjetas = () =>{
+        const getTarjetas = () => {
             fetch('http://localhost:9000/api/pelicula')
-            .then(res => res.json())
-            .then(res => setTarjetas(res))
+                .then(res => res.json())
+                .then(res => setTarjetas(res))
         }
         getTarjetas()
     }, [])
@@ -34,11 +40,10 @@ function HomePage() {
         <div className="App">
             <CHeader />
             <main className="App-main">
-                {tarjetas.map((tarjeta) => (
-                    <Tarjeta titulo = {tarjeta.nombre} duracion = {tarjeta.duracion} descripcion = {tarjeta.descripcion}/>     
-                ))}
+                <button type="button" className="btn btn-dark" onClick={handleClick}>Agregar pelicula</button>
+                <Tarjeta tarjetasP={tarjetas} />
             </main>
-            <AppNav pages={initialStateNav}/>
+            <AppNav pages={initialStateNav} />
             <footer className="App-footer">
 
             </footer>
@@ -46,4 +51,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default Peliculas;
