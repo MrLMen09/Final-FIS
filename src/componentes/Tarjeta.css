@@ -1,3 +1,16 @@
+h3
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+p
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
 .contenedorTarjeta
 {
     position: relative;
@@ -77,12 +90,19 @@
 }
 #info
 {
-    height: 47%;
+    height: 65%;
     overflow: hidden;   
 }
 #botones
 {
     height: 20%;
+}
+#botones button
+{
+    margin: 5px auto;
+    width: 90%;
+    height: 80%;
+
 }
 #atras
 {

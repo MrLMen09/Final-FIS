@@ -1,5 +1,5 @@
 .App-header{
-    background-color: red;
+    background: white;
     color: white;
     grid-area: header;
     display: flex;
@@ -12,3 +12,4 @@
     margin: 0%;
     overflow: hidden;
 }
+

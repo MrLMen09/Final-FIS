@@ -1,42 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Tarjeta.css';
 
-function Tarjeta() {
+function Tarjeta(props) {
+
+    const [tarjetas, setTarjetas] = useState([]);
+
+    useEffect(() => {
+        const getTarjetas = () =>{
+            fetch('http://localhost:9000/api/pelicula')
+            .then(res => res.json())
+            .then(res => setTarjetas(res))
+        }
+        getTarjetas()
+    }, [])
 
     return (
-        <div className="contenedorTarjeta">
-            <div id="adelante">
-                <img src="../media/producto.png" alt="" id="imagen-tarjeta" />
-                <hr />
-                <h3>Producto</h3>
-            </div>
-
-            <div id="atras">
-                <div id="info">
-                    <h3>Producto</h3>
-                    <hr />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <hr style={{ color: "greenyellow" }} />
-                <div id="botones">
-                    <button id="agregar" className='botonesTarjeta'>Agregar al Carrito</button>
-                    <br />
-                    <button id="comprar" className='botonesTarjeta'>Comprar Ahora</button>
-                    {/*<div className="row">
-                        <div className="col-lg-4 info1">
-                            <button type="button" className="btn btn-dark quantity">-</button>
+                <div className="contenedorTarjeta">
+                    <div id="adelante">
+                        <img src="../media/producto.png" alt="" id="imagen-tarjeta" />
+                        <hr />
+                        <h3>{props.titulo}</h3>
+                    </div>
+    
+                    <div id="atras">
+                        <div id="info">
+                            <h3>{props.titulo}</h3>
+                            <hr />
+                            <p>{props.duracion}</p>
+                            <p>{props.descripcion}</p>
                         </div>
-                        <div className="col-lg-4 info2">
-                            <input type="text" className='i_quantity' min="0" defaultValue="0" disabled />
+                        <hr style={{ color: "greenyellow" }} />
+                        <div id="botones">
+                            <button id="comprar" className='botonesTarjeta'>Comprar Ahora</button>
                         </div>
-                        <div className="col-lg-4 info3">
-                            <button type="button" className="btn btn-dark quantity" >+</button>
-                        </div>
-                    </div>*/}
-                </div>
-            </div>
-        </div>
-    );
+                    </div>
+                </div>        
+            );
 
 }
 

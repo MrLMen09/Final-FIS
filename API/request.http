@@ -1,0 +1,33 @@
+###
+GET http://localhost:9000/api/pelicula HTTP/1.1
+
+###
+POST http://localhost:9000/api/pelicula HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "asd",
+    "duracion": "01:00:00",
+    "idPelicula": "HSJ1232",
+    "valoraciones": 0,
+    "descripcion": "PRUEBA",
+    "codigoFuncion": null
+}
+
+###
+DELETE http://localhost:9000/api/pelicula/ASD123 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/pelicula/AVG123 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Avengers: Endgame",
+    "duracion": "02:30:00",
+    "valoraciones": 9,
+    "descripcion": "Pelicula de Accion Parte 2",
+    "codigoFuncion": 1
+}
+
+###
+GET http://localhost:9000/api/snack HTTP/1.1
