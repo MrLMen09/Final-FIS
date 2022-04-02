@@ -1,11 +1,11 @@
 import '../styles/HomePage.css';
 import Tarjeta from '../componentes/Tarjeta';
-import CHeader from '../componentes/Header.jsx';
+import Header from '../componentes/Header';
 
 function HomePage() {
     return (
         <div className="App">
-            <CHeader/>
+            <Header/>
             <main className="App-main">
                 <Tarjeta></Tarjeta>
             </main>

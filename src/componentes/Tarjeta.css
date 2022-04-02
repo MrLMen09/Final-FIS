@@ -1,20 +1,48 @@
-#contenedorTarjeta
+.contenedorTarjeta
 {
-    border-radius: 10px;
-    padding: 10px;
+    position: relative;
+    padding: 0px;
     margin: 30px 30px;
     width: 200px;
-    height: 400px;
+    height: 300px;
+    
+}
+.contenedorTarjeta #adelante
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: #282c34;
     border: 1px solid white;
     color: greenyellow;
     box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: 1s;
+    transform: perspective(500px) rotateY(0deg);
 }
-#adelante
+.contenedorTarjeta:hover #adelante
 {
+    transform: perspective(500px) rotateY(180deg);
+}
+.contenedorTarjeta #atras
+{
+    position: absolute;
     width: 100%;
     height: 100%;
-    display: inline-block;
+    background: #282c34;
+    border: 1px solid white;
+    color: greenyellow;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: 1s;
+    padding: 5px;
+    transform: perspective(500px) rotateY(180deg);
+}
+.contenedorTarjeta:hover #atras
+{
+    transform: perspective(500px) rotateY(0deg);
 }
 
 .botonesTarjetas
@@ -42,14 +70,10 @@
     border: none;
 }
 
-#imagen
-{
-    height: 33%;
-}
 #imagen-tarjeta
 {
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 #info
 {

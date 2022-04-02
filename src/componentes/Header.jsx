@@ -1,4 +1,6 @@
+import './Tarjeta.css';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
+
 
 function Header() {
     return (
