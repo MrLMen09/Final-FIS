@@ -1,18 +1,31 @@
 import '../styles/HomePage.css';
-import Tarjeta from '../componentes/Tarjeta';
+import React from 'react';
+import AppNav from '../componentes/AppNav';
 import CHeader from '../componentes/Header.jsx';
 
 function HomePage() {
+    const initialStateNav = [
+        {
+            id: "peliculas",
+            nombre: "Peliculas",
+            url: "/peliculas"
+        },
+        {
+            id: "snacks",
+            nombre: "Snacks",
+            url: "/snacks"
+        }
+    ]
+
     return (
         <div className="App">
-            <CHeader/>
+            <CHeader />
             <main className="App-main">
-                <Tarjeta></Tarjeta>
+                <div className="title">
+                    <h1 className="titleH1">Bienvenido a CineJungla!</h1>
+                </div>
             </main>
-            <nav className="App-nav">
-                <p className='menu' id="peliculas">Peliculas</p>
-                <p className='menu' id="peliculas">Snacks</p>
-            </nav>
+            <AppNav pages={initialStateNav}/>
             <footer className="App-footer">
 
             </footer>

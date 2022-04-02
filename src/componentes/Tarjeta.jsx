@@ -1,23 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Tarjeta.css';
 
-function Tarjeta() {
+function Tarjeta(props) {
 
-    const [tarjetas, setTarjetas] = useState([]);
-
-    useEffect(() => {
-        const getTarjetas = () =>{
-            fetch('http://localhost:9000/api/pelicula')
-            .then(res => res.json())
-            .then(res => setTarjetas(res))
-        }
-        getTarjetas()
-    }, [])
+    const tarjetas = props.tarjetasP;
 
     return (
         <div>
             {tarjetas.map((tarjeta) => (
-                <div id="contenedorTarjeta">
+                <div key={tarjeta.idPelicula} id="contenedorTarjeta">
                     <div id="atras">
                     </div>
                     <div id="adelante">
@@ -48,7 +39,6 @@ function Tarjeta() {
                     </div>
                 </div>
             ))}
-            {/* */}
         </div>
     );
 

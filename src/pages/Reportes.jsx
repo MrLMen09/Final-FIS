@@ -1,7 +1,40 @@
 import '../styles/Reportes.css';
 import CHeader from '../componentes/Header.jsx';
+import AppNav from '../componentes/AppNav';
 
 function Reportes() {
+    const initialStateNav = [
+        {
+            id: "titan",
+            nombre: "Titan",
+            url: "/reportes"
+        },
+        {
+            id: "unicentro",
+            nombre: "Unicentro",
+            url: "/reportes"
+        },
+        {
+            id: "plazacentral",
+            nombre: "Plaza Central",
+            url: "/reportes"
+        },
+        {
+            id: "granestacion",
+            nombre: "Gran estacion",
+            url: "/reportes"
+        },
+        {
+            id: "embajador",
+            nombre: "Embajador Centro",
+            url: "/reportes"
+        },
+        {
+            id: "americas",
+            nombre: "Las Américas",
+            url: "/reportes"
+        }
+    ]
     return (
         <div className="App">
             <CHeader/>
@@ -20,15 +53,7 @@ function Reportes() {
                     versions of Lorem Ipsum.</p>
                 </div>
             </main>
-            <nav className="App-nav">
-                <p className='' id="peliculas">MULTIPLEX's</p>
-                <p className='menu' id="peliculas">Titan</p>
-                <p className='menu' id="peliculas">Unicentro</p>
-                <p className='menu' id="peliculas">Plaza Central</p>
-                <p className='menu' id="peliculas">Gran Estación</p>
-                <p className='menu' id="peliculas">Embajador (Centro)</p>
-                <p className='menu' id="peliculas">Las Américas</p>
-            </nav>
+            <AppNav pages={initialStateNav}/>
             <footer className="App-footer">
 
             </footer>

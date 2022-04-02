@@ -1,4 +1,6 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
+import './Header.css';
 
 function Header() {
     return (

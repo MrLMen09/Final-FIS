@@ -1,8 +1,21 @@
 import '../styles/SalaCine.css';
 import CHeader from '../componentes/Header.jsx';
+import AppNav from '../componentes/AppNav.jsx';
 import ImgSalaCine from '../media/SalaCine.png';
 
 function SalaCine() {
+    const initialStateNav = [
+        {
+            id: "peliculas",
+            nombre: "Peliculas",
+            url: "/peliculas"
+        },
+        {
+            id: "snacks",
+            nombre: "Snacks",
+            url: "/snacks"
+        }
+    ]
     return (
         <div className="App">
             <CHeader />
@@ -24,9 +37,7 @@ function SalaCine() {
                     </div>
                 </div>
             </main>
-            <nav className="App-nav">
-
-            </nav>
+            <AppNav pages={initialStateNav}/>
             <footer className="App-footer">
 
             </footer>
