@@ -9,6 +9,7 @@
     border: 1px solid white;
     color: greenyellow;
     box-shadow: 10px 10px 20px black;
+    display: inline-block;
 }
 #adelante
 {
