@@ -32,11 +32,21 @@
 #h-principal {
     display: flex;
     justify-content: left;
+    color: white;
 }
 
 #botones-header {
     display: flex;
     justify-content: space-between;
+}
+
+.linkTitulo{
+    text-decoration: none;
+    color: white;
+}
+
+.linkTitulo:hover{
+    color: black;
 }
 
 header {
