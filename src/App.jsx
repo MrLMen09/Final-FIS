@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import Peliculas from './pages/Peliculas';
 import AgregarPelicula from './pages/AgregarPelicula';
 import Snacks from './pages/Snacks';
+import AgregarSnack from './pages/AgregarSnack';
 import Reportes from './pages/Reportes';
 import SalaCine from './pages/SalaCine';
 
@@ -13,7 +14,8 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/peliculas' element={<Peliculas/>}/>
         <Route path='/agregarpelicula' element={<AgregarPelicula/>}/>
-        {/*<Route path='/snacks' element={<Snacks/>}/>*/}
+        <Route path='/snacks' element={<Snacks/>}/>
+        <Route path='/agregarsnack' element={<AgregarSnack/>}/>
         <Route path='/reportes' element={<Reportes/>}/>
         <Route path='/compracine' element={<SalaCine/>}/>
       </Routes>

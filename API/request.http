@@ -31,3 +31,32 @@ Content-Type: application/json
 
 ###
 GET http://localhost:9000/api/snack HTTP/1.1
+
+###
+POST http://localhost:9000/api/snack HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigoProducto": 3,
+    "stock": 12,
+    "nombre": "Prueba Snack",
+    "descripcion": "PRUEBA",
+    "valoracion": 0,
+    "codigo": null
+}
+
+###
+DELETE http://localhost:9000/api/snack/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/snack/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigoProducto": 3,
+    "stock": 1,
+    "nombre": "Prueba Snack",
+    "descripcion": "asd prueba",
+    "valoracion": 0,
+    "codigo": null
+}

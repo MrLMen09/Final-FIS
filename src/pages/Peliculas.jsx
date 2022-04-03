@@ -40,7 +40,7 @@ function Peliculas() {
         <div className="App">
             <CHeader />
             <main className="App-main">
-                <button type="button" className="btn btn-dark" onClick={handleClick}>Agregar pelicula</button>
+                {/*<button type="button" className="btn btn-dark" onClick={handleClick}>Agregar pelicula</button>*/}
                 {tarjetas.map((tarjeta) => (
                     <Tarjeta titulo = {tarjeta.nombre} duracion = {tarjeta.duracion} descripcion = {tarjeta.descripcion}/>     
                 ))}
