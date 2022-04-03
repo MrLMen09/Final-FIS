@@ -14,8 +14,6 @@ function Header() {
                 <NavLink to="/" className="linkTitulo"><h1 className="titulo">Cine Jungla</h1></NavLink>
             </div>
             <div id="botones-header">
-                <img src="../media/carritoBlanco.png" alt="" id="carrito" />
-                <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,6 +34,8 @@ function Header() {
                         </div>
                     </div>
                 </nav>
+                <img src="../media/carritoBlanco.png" alt="" id="carrito" />
+                <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />
             </div>
         </header>
     );
