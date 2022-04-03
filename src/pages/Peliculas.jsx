@@ -20,11 +20,6 @@ function Peliculas() {
         }
     ]
 
-    let navigate = useNavigate();
-    function handleClick() {
-        navigate('/agregarpelicula')
-    }
-
     const [tarjetas, setTarjetas] = useState([]);
 
     useEffect(() => {
