@@ -64,15 +64,6 @@ p
     height: 50px;
     color: white;
 }
-#agregar
-{
-    background: lightskyblue;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    border-radius: 5px;
-    border: none;
-}
 #comprar
 {
     background: lightgreen;
@@ -102,11 +93,4 @@ p
     margin: 5px auto;
     width: 90%;
     height: 80%;
-
-}
-
-.quantity, .i_quantity{
-    text-align: center;
-    width: 2.7em;
-    min-height: 2.7em;
 }

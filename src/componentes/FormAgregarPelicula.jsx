@@ -54,7 +54,7 @@ function Form({ pelicula, setPelicula }) {
     return (
         <div className="form">
             <form onSubmit={handleSubmit}>
-                <div className="title">
+                <div className="titleAgregarP">
                     <h1>AGREGAR PELICULA</h1>
                 </div>
                 <div class="d-grid gap-2 peliculasButton">

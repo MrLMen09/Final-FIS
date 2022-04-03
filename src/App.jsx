@@ -6,6 +6,7 @@ import Snacks from './pages/Snacks';
 import AgregarSnack from './pages/AgregarSnack';
 import Reportes from './pages/Reportes';
 import SalaCine from './pages/SalaCine';
+import AbastecerBD from './pages/MenuAbastecerBD';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/peliculas' element={<Peliculas/>}/>
         <Route path='/snacks' element={<Snacks/>}/>
+        <Route path='/abastecerbd' element={<AbastecerBD/>}/>
         <Route path='/agregarpelicula' element={<AgregarPelicula/>}/>
         <Route path='/snacks' element={<Snacks/>}/>
         <Route path='/agregarsnack' element={<AgregarSnack/>}/>

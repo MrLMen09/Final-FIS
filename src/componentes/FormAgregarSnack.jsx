@@ -55,7 +55,7 @@ function Form({ snack, setSnack }) {
     return (
         <div className="form">
             <form onSubmit={handleSubmit}>
-                <div className="title">
+                <div className="titleAgregarS">
                     <h1>AGREGAR SNACK</h1>
                 </div>
                 <div class="d-grid gap-2 peliculasButton">

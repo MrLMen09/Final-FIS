@@ -36,7 +36,10 @@ function Snacks() {
             <CHeader />
             <main className="App-main">
                 {snacks.map((snack) => (
-                    <Tarjeta titulo={snack.nombre} descripcion={snack.descripcion} />
+                    <div className="contCards">
+                        <Tarjeta titulo={snack.nombre} descripcion={snack.descripcion} />
+                    </div>
+
                 ))}
             </main >
             <AppNav pages={initialStateNav} />
