@@ -60,3 +60,15 @@ Content-Type: application/json
     "valoracion": 0,
     "codigo": null
 }
+
+###
+GET http://localhost:9000/api/empleado HTTP/1.1
+
+###
+POST http://localhost:9000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "cc": "123456789",
+    "telefono": "123456789",
+}
