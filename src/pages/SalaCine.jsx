@@ -2,6 +2,7 @@ import '../styles/SalaCine.css';
 import CHeader from '../componentes/Header.jsx';
 import AppNav from '../componentes/AppNav.jsx';
 import ImgSalaCine from '../media/SalaCine.png';
+import Footer from '../componentes/Footer';
 
 function SalaCine() {
     const initialStateNav = [

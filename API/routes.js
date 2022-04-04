@@ -66,6 +66,29 @@ routes.get("/snack/", (req, res) => {
   });
 });
 
+routes.get('/producto/', (req, res)=>{
+    req.getConnection((err, conn)=>{
+        if(err) return res.send(err)
+
+        conn.query('SELECT * FROM producto', (err, rows)=>{
+            if(err) return res.send(err)
+
+            res.json(rows)
+        })
+    })
+})
+
+routes.get('/producto/:id', (req, res)=>{
+    req.getConnection((err, conn)=>{
+        if(err) return res.send(err)
+        conn.query('SELECT * FROM producto WHERE Codigo = ?', [req.params.id], (err, rows)=>{
+            if(err) return res.send(err)
+
+            res.json(rows)
+        })
+    })
+})
+
 routes.post("/snack/", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
