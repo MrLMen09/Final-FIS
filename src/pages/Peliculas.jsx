@@ -7,7 +7,7 @@ import AppNav from '../componentes/AppNav';
 import { BrowserRouter as Router, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
 
 function Peliculas() {
-
+    
     const initialStateNav = [
         {
             id: "peliculas",
