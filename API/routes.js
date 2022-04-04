@@ -140,4 +140,27 @@ routes.post("/login", (req, res) => {
   });
 });
 
+routes.post("/funcion", (req, res) => {
+  console.log("Entre a funcion");
+  req.getConnection((err, conn) => {
+    if (err) return res.send(err);
+    conn.query(
+      "SELECT idPelicula from pelicula WHERE nombre = ?",
+      [req.body.titulo],
+      (err, rows) => {
+        if (err) return res.send(err);
+        const idPelicula = rows[0].idPelicula;
+        conn.query(
+          "SELECT horainicial, codigoSala from funcion where pelicula = ?",
+          [idPelicula],
+          (err, rows) => {
+            if (err) return res.send(err);
+            res.json(rows);
+          }
+        );
+      }
+    );
+  });
+});
+
 module.exports = routes;

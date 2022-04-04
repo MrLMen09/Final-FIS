@@ -6,18 +6,15 @@ import Snacks from './pages/Snacks';
 import AgregarSnack from './pages/AgregarSnack';
 import Reportes from './pages/Reportes';
 import SalaCine from './pages/SalaCine';
-<<<<<<< Updated upstream
-import AbastecerBD from './pages/MenuAbastecerBD';
-=======
 import Login from './pages/Login';
->>>>>>> Stashed changes
+import AbastecerBD from './pages/MenuAbastecerBD';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Login/>}/>
-        <Route path='/Home' element={<HomePage/>}/>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/Login' element={<Login/>}/>
         <Route path='/peliculas' element={<Peliculas/>}/>
         <Route path='/snacks' element={<Snacks/>}/>
         <Route path='/abastecerbd' element={<AbastecerBD/>}/>
@@ -25,7 +22,7 @@ function App() {
         <Route path='/snacks' element={<Snacks/>}/>
         <Route path='/agregarsnack' element={<AgregarSnack/>}/>
         <Route path='/reportes' element={<Reportes/>}/>
-        <Route path='/compracine' element={<SalaCine/>}/>
+        <Route path='/compracine' element={<SalaCine/>}/>        
       </Routes>
     </Router>
   );

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import fondo from "../media/fondo.svg";
 import "../styles/Login.css";
 
 const Login = () => {
   const redirigir = () => {
-    window.location.href = "/Home";
+    window.location.href = "/";
   };
 
   const [user, setUser] = useState({

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'
-import './AppNav.css';
+import './styles/AppNav.css';
 
 function AppNav(props) {
     const pagesNav = props.pages;

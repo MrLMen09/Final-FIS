@@ -30,7 +30,7 @@ function Peliculas() {
         }
         getTarjetas()
     }, [])
-
+    console.log(tarjetas);
     return (
         <div className="App">
             <CHeader />

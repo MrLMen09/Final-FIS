@@ -1,5 +1,5 @@
 import React from 'react';
-import './FormAgregarPelicula.css';
+import './styles/FormAgregarPelicula.css';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
 
