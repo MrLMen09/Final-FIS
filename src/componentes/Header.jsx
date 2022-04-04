@@ -34,7 +34,6 @@ function Header() {
                         </div>
                     </div>
                 </nav>
-                <img src="../media/carritoBlanco.png" alt="" id="carrito" />
                 <img src="../media/personaIconoBlanco.png" alt="" id="usuario" />
             </div>
         </header>

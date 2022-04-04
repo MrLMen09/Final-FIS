@@ -1,6 +1,7 @@
 import '../styles/Reportes.css';
 import CHeader from '../componentes/Header.jsx';
 import AppNav from '../componentes/AppNav';
+import Footer from '../componentes/Footer';
 
 function Reportes() {
     const initialStateNav = [
@@ -54,8 +55,8 @@ function Reportes() {
                 </div>
             </main>
             <AppNav pages={initialStateNav}/>
-            <footer className="App-footer">
-
+            <footer className='App-footer'>
+                <Footer/>
             </footer>
         </div>
     );

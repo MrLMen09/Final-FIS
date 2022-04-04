@@ -1,0 +1,57 @@
+.contenedorFooter
+{
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #282C30;
+    color: lightgreen;
+}
+
+.imgFooter
+{
+    width: 70px;
+    height: 70px;
+    margin: auto 15px;
+}
+
+.vertical
+{
+    border-left: thick solid lightgreen;
+}
+
+.grupo
+{
+    padding: 10px;
+    border-right: 1px solid lightgreen;
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grupo h2{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 100;    
+}
+
+
+.integrantes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1
+{
+    padding: 10px;
+}
+.integrantes h2
+{
+    color: lightgreen;
+    font-family: sans-serif;
+    font-size: 12px;
+}

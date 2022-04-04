@@ -1,6 +1,7 @@
 import '../styles/Snacks.css';
 import React, { useState, useEffect } from 'react';
 import Tarjeta from '../componentes/Tarjeta';
+import Footer from '../componentes/Footer';
 import CHeader from '../componentes/Header.jsx';
 import AppNav from '../componentes/AppNav';
 import { BrowserRouter as Router, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
@@ -37,14 +38,14 @@ function Snacks() {
             <main className="App-main">
                 {snacks.map((snack) => (
                     <div className="contCards">
-                        <Tarjeta titulo={snack.nombre} descripcion={snack.descripcion} codProd = {tarjeta.Codigo}/>
+                        <Tarjeta titulo={snack.nombre} descripcion={snack.descripcion} codProd = {snack.Codigo}/>
                     </div>
 
                 ))}
             </main >
             <AppNav pages={initialStateNav} />
-            <footer className="App-footer">
-
+            <footer className='App-footer'>
+                <Footer/>
             </footer>
         </div >
     );

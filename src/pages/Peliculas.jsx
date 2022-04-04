@@ -1,5 +1,6 @@
 import '../styles/Peliculas.css';
 import React, { useState, useEffect } from 'react';
+import Footer from '../componentes/Footer';
 import Tarjeta from '../componentes/Tarjeta';
 import CHeader from '../componentes/Header.jsx';
 import AppNav from '../componentes/AppNav';
@@ -44,8 +45,8 @@ function Peliculas() {
 
             </main>
             <AppNav pages={initialStateNav} />
-            <footer className="App-footer">
-
+            <footer className='App-footer'>
+                <Footer/>
             </footer>
         </div>
     );

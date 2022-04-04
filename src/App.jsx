@@ -6,11 +6,8 @@ import Snacks from './pages/Snacks';
 import AgregarSnack from './pages/AgregarSnack';
 import Reportes from './pages/Reportes';
 import SalaCine from './pages/SalaCine';
-<<<<<<< Updated upstream
-import AbastecerBD from './pages/MenuAbastecerBD';
-=======
 import Login from './pages/Login';
->>>>>>> Stashed changes
+import AbastecerBD from './pages/MenuAbastecerBD';
 
 function App() {
   return (

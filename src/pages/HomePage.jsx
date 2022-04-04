@@ -1,4 +1,5 @@
 import '../styles/HomePage.css';
+import Footer from '../componentes/Footer';
 import Tarjeta from '../componentes/Tarjeta';
 import AppNav from '../componentes/AppNav';
 import CHeader from '../componentes/Header.jsx';
@@ -57,9 +58,10 @@ function HomePage() {
                 </div>
             </main>
             <AppNav pages={initialStateNav} />
-            <footer className="App-footer">
-
+            <footer className='App-footer'>
+                <Footer/>
             </footer>
+            
         </div>
     );
 }
