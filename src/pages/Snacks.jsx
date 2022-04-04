@@ -41,7 +41,7 @@ function Snacks() {
             <CHeader />
             <main className="App-main">
                 {tarjetas.map((tarjeta) => (
-                    <Tarjeta titulo = {tarjeta.nombre} duracion = {tarjeta.duracion} descripcion = {tarjeta.descripcion}/>     
+                    <Tarjeta titulo = {tarjeta.nombre} duracion = {tarjeta.duracion} descripcion = {tarjeta.descripcion} codProd = {tarjeta.Codigo}/>     
                 ))}
             </main>
             <AppNav pages={initialStateNav} />

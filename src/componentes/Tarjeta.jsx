@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Tarjeta.css';
 
 function Tarjeta(props) {
+    
+    const [tarjetas, setTarjetas] = useState([]);
 
+    var urlBase = "http://localhost:9000/api/producto/";
+    var codProd = props.codProd;
+    var url = urlBase + codProd;
+    useEffect(() => {
+        const getTarjetas = () => {
+            fetch(url)
+                .then(res => res.json())
+                .then(res => setTarjetas(res))
+        }
+        getTarjetas()
+    }, [])
 
     return (
                 <div className="contenedorTarjeta">
@@ -18,6 +31,9 @@ function Tarjeta(props) {
                             <hr />
                             <p>{props.duracion}</p>
                             <p>{props.descripcion}</p>
+                            {tarjetas.map((tarjeta) => (
+                            <p>${tarjeta.Precio}</p>
+                            ))}
                         </div>
                         <hr style={{ color: "greenyellow" }} />
                         <div id="botones">
