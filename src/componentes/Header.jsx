@@ -11,7 +11,7 @@ function Header() {
                     id="logo"
                     src="../media/logo.png"
                 />
-                <NavLink to="/" className="linkTitulo"><h1 className="titulo">Cine Jungla</h1></NavLink>
+                <NavLink to="/homepage" className="linkTitulo"><h1 className="titulo">Cine Jungla</h1></NavLink>
             </div>
             <div id="botones-header">
                 <nav className="navbar navbar-expand-lg navbar-dark">

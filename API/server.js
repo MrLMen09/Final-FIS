@@ -11,7 +11,7 @@ const dbOptions = {
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'Mr_Men09-SQL',
+    password: '',
     database: 'bd_finalfis'
 }
 

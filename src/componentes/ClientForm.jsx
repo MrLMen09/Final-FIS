@@ -24,7 +24,7 @@ const ClientForm = (props) => {
 
   const redirigir = () => { 
     alert("Boletas compradas exitosamente");
-    setTimeout(window.location.href = "/", 2000)
+    setTimeout(window.location.href = "/homepage", 2000)
   
   };
   return (

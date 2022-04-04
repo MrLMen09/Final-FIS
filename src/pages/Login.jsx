@@ -4,7 +4,7 @@ import "../styles/Login.css";
 
 const Login = () => {
   const redirigir = () => {
-    window.location.href = "/";
+    window.location.href = "/homepage";
   };
 
   const [user, setUser] = useState({
