@@ -1,6 +1,6 @@
 import '../styles/Snacks.css';
 import React, { useState, useEffect } from 'react';
-import Tarjeta from '../componentes/Tarjeta';
+import Tarjeta from '../componentes/TarjetaSnacks';
 import Footer from '../componentes/Footer';
 import CHeader from '../componentes/Header.jsx';
 import AppNav from '../componentes/AppNav';

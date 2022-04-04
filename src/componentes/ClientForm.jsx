@@ -22,10 +22,10 @@ const ClientForm = (props) => {
     getFuncion();
   }, []);
 
-  const redirigir = () => {
+  const redirigir = () => { 
     alert("Boletas compradas exitosamente");
     setTimeout(window.location.href = "/homepage", 2000)
-
+  
   };
   return (
     <div className="form p-0 mt-5 form-container">
@@ -45,7 +45,7 @@ const ClientForm = (props) => {
             <input type="text" className="form-control" value={f.codigoSala} readOnly />
           </div>
           <div className="form-group">
-            <label htmlFor="">Duración</label>
+            <label htmlFor="">Hora</label>
             <input type="text" className="form-control" value={f.horainicial} readOnly />
           </div>
           <div className="form-group">
@@ -54,9 +54,9 @@ const ClientForm = (props) => {
           </div>
           <div className="form-group">
             <label htmlFor="">Cantidad</label>
-            <input type="number" className="form-control" />
+            <input type="number" className="form-control"/>
           </div>
-
+          
           <button className="mt-4 btn btn-primary" onClick={redirigir}>Confirmar</button>
         </div>
       ))}
