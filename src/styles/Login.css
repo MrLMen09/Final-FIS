@@ -1,0 +1,16 @@
+.bk-img{
+    z-index: -5;
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    bottom: 0;
+}
+
+.lg-container{
+    height: 100vh;
+}
+
+.btn-lg{
+    background-color: #05668D;
+    border-color: #05668D;
+}

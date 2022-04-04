@@ -1,11 +1,11 @@
-import '../styles/HomePage.css';
+import '../styles/MenuAbastecerBD.css';
 import Tarjeta from '../componentes/Tarjeta';
 import AppNav from '../componentes/AppNav';
 import CHeader from '../componentes/Header.jsx';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
 
-function HomePage() {
+function AbastecerBD() {
     const initialStateNav = [
         {
             id: "peliculas",
@@ -18,23 +18,13 @@ function HomePage() {
             url: "/snacks"
         }
     ]
-    const [tarjetas, setTarjetas] = useState([]);
-
-    useEffect(() => {
-        const getTarjetas = () => {
-            fetch('http://localhost:9000/api/pelicula')
-                .then(res => res.json())
-                .then(res => setTarjetas(res))
-        }
-        getTarjetas()
-    }, [])
 
     let navigate = useNavigate();
-    function handleClickComprar() {
-        navigate('/peliculas')
+    function handleClickAgregarP() {
+        navigate('/agregarpelicula')
     }
-    function handleClickAbastecer() {
-        navigate('/abastecerbd')
+    function handleClickAgregarS() {
+        navigate('/agregarsnack')
     }
 
     return (
@@ -42,17 +32,15 @@ function HomePage() {
             <CHeader />
             <main className="App-main">
                 <div className="container">
-                    <div className="titleMenu">
-                        <h1>MENU PRINCIPAL</h1>
+                    <div className="titleMenuAbastecerBD">
+                        <h1>MENU ABASTECER BASE DE DATOS</h1>
                     </div>
                     <div className="">
                         <p>Elige una opción</p>
                     </div>
                     <div className="d-grid gap-2 col-6 mx-auto">
-                        <button className="btn btn-primary" onClick={handleClickComprar}>Comprar</button>
-                        <button className="btn btn-primary" onClick={handleClickAbastecer}>Abastecer BD</button>
-                        <button className="btn btn-primary" >Cambiar Rol</button>
-                        <button className="btn btn-primary" >Evalúar productos/servicios</button>
+                        <button className="btn btn-primary" onClick={handleClickAgregarP}>Agregar Pelicula</button>
+                        <button className="btn btn-primary" onClick={handleClickAgregarS}>Agregar Snack</button>
                     </div>
                 </div>
             </main>
@@ -64,4 +52,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default AbastecerBD;

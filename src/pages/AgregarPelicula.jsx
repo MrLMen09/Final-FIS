@@ -15,7 +15,10 @@ function AgregarPelicula() {
     })
 
     return (
-        <Form pelicula={pelicula} setPelicula={setPelicula}/>
+        <div>
+            <Form pelicula={pelicula} setPelicula={setPelicula}/>
+        </div>
+        
     );
 }
 

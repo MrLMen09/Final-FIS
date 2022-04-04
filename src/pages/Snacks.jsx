@@ -20,35 +20,33 @@ function Snacks() {
         }
     ]
 
-    let navigate = useNavigate();
-    function handleClick() {
-        navigate('/agregarpelicula')
-    }
-
-    const [tarjetas, setTarjetas] = useState([]);
+    const [snacks, setSnacks] = useState([]);
 
     useEffect(() => {
-        const getTarjetas = () => {
+        const getSnacks = () => {
             fetch('http://localhost:9000/api/snack')
                 .then(res => res.json())
-                .then(res => setTarjetas(res))
+                .then(res => setSnacks(res))
         }
-        getTarjetas()
+        getSnacks()
     }, [])
 
     return (
         <div className="App">
             <CHeader />
             <main className="App-main">
-                {tarjetas.map((tarjeta) => (
-                    <Tarjeta titulo = {tarjeta.nombre} duracion = {tarjeta.duracion} descripcion = {tarjeta.descripcion} codProd = {tarjeta.Codigo}/>     
+                {snacks.map((snack) => (
+                    <div className="contCards">
+                        <Tarjeta titulo={snack.nombre} descripcion={snack.descripcion} codProd = {tarjeta.Codigo}/>
+                    </div>
+
                 ))}
-            </main>
+            </main >
             <AppNav pages={initialStateNav} />
             <footer className="App-footer">
 
             </footer>
-        </div>
+        </div >
     );
 }
 

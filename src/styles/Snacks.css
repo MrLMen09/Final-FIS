@@ -1,0 +1,8 @@
+.App-main{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+.contCards{
+    display: inline-block;
+}
